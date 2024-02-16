@@ -5,30 +5,33 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>TIC TAC TOE</title>
-	<link rel="stylesheet" href="assest/css/style.css">
 	<link rel="stylesheet" href="assest/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assest/css/style.css">
 
 </head>
 
 <body>
-	<div class="container text-center">
-		<h1 class="fs-1 fw-bold text-uppercase text-white mt-5">Tic Tac Toe</h1>
-		<div id="scoreboard" class="scoreboard fs-3 mb-5 fw-bold text-uppercase text-white">Player X: 0 <br> Player O: 0
-		</div>
-		<div id="board" class="board justify-content-center">
-			<div class="square" data-index="0"></div>
-			<div class="square" data-index="1"></div>
-			<div class="square" data-index="2"></div>
-			<div class="square" data-index="3"></div>
-			<div class="square" data-index="4"></div>
-			<div class="square" data-index="5"></div>
-			<div class="square" data-index="6"></div>
-			<div class="square" data-index="7"></div>
-			<div class="square" data-index="8"></div>
-		</div>
-		<div id="result" class="result"></div>
-
+	<div class="msg-container hide">
+		<p id="msg">Winner</p>
+		<button id="new-btn">New Game</button>
 	</div>
+	<main>
+		<h1 class="text-center fw-bold text-uppercase mt-5">Tic Tac Toe</h1>
+		<div class="container">
+			<div class="game">
+				<button class="box"></button>
+				<button class="box"></button>
+				<button class="box"></button>
+				<button class="box"></button>
+				<button class="box"></button>
+				<button class="box"></button>
+				<button class="box"></button>
+				<button class="box"></button>
+				<button class="box"></button>
+			</div>
+		</div>
+		<button id="reset-btn" class="fw-bold">Reset Game</button>
+	</main>
 
 	<script src="assest/js/script.js"></script>
 </body>
